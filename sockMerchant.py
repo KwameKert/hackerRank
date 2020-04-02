@@ -21,3 +21,6 @@ def sockMerchant(n, ar):
         else:
             holder[val] = True
     return count   
+
+
+print(sockMerchant(3, [1,2,1,3,2,4]))    
