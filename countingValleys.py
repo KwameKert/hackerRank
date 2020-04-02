@@ -25,6 +25,9 @@
 #     \/\/
 # He enters and leaves one valley.
 
+
+#I focus on the number of times he comes back to see level 
+
 def levelingValleys(n, s):
     level = 0;
     valley = 0;
