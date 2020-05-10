@@ -6,22 +6,35 @@
 #  Input 1 4 4 4 5 3
 # Output 4
 
-
-def migratoryBirds(arr):
-    holder = {}
+#def migratoryBirds(arr):
+ #   holder = {}
     #sort array in ascending order
-    arr.sort()
+  #  arr.sort()
 
     #loop through array
-    for item in arr:
+   # for item in arr:
     #place the items in hash table with their counts
-        if item in holder:
-            holder[item] =  holder[item]+1;
-        else:
-            holder[item] =1
+    #    if item in holder:
+     #       holder[item] =  holder[item]+1;
+      #  else:
+       #     holder[item] =1
 
     #get highest count
-    return max(holder, key=holder.get)
+   # return max(holder, key=holder.get)
+
+
+def migratoryBirds(arr):
+
+    #define an array of 6 elements
+    count = [0]*6
+
+    #loop through an array and increase the value of an index
+    for item in arr:
+        count[item] = count[item]+1
+
+    #return the max number in the array and return its index
+    return count.index(max(count))
+
 
 
 
